@@ -39,7 +39,7 @@ context master {
         WEIGHT_UNIT     : String(2)         @(title : '{i18n>WEIGHT_UNIT}');
         PRICE           : Decimal(15,2)     @(title : '{i18n>PRICE}');
         CURRENCY_CODE   : String(4)         @(title : '{i18n>CURRENCY_CODE}');
-         WIDHT           : Decimal(5,2)      @(title : '{i18n>WIDHT}');
+         WIDHT           : Decimal(5,2)      @(title : '{i18n>WIDTH}');
         DEPTH           : Decimal(5,2)      @(title : '{i18n>DEPTH}');
         HEIGHT          : Decimal(5,2)      @(title : '{i18n>HEIGHT}');
         DIM_UNIT        : String(2)         @(title : '{i18n>DIM_UNIT}');
