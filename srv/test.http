@@ -181,3 +181,23 @@ GET http://localhost:4004/odata/v4/catalog/POSrv
 ### Read largest purchase order using instance bounded function
 ###
 GET http://localhost:4004/odata/v4/catalog/POSrv/74867AD200E41EDBA5D8B0C98DC2A052/largestOrder()
+
+###
+
+GET http://localhost:4004/odata/v4/catalog/POItemSrv
+
+###
+GET http://localhost:4004/odata/v4/catalog/POItemSrv?$expand=PROD
+
+
+
+###
+GET http://localhost:4004/odata/v4/catalog/ProductSrv?$top=10
+
+
+###
+GET  http://localhost:4004/odata/v4/catalog/ProductSrv?$select=NODE_KEY,PRODUCT_ID
+
+###
+GET  http://localhost:4004/odata/v4/catalog/POItemSrv?$select=PROD_NODE_KEY
+
