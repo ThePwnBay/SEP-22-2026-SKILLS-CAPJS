@@ -1,46 +1,45 @@
 {
-  "xsappname": "purchaseorders",
-  "tenant-mode": "dedicated",
-  "scopes": [
+ "xsappname": "purchaseorders",
+ "tenant-mode": "dedicated",
+ "scopes": [
+  {
+   "name": "$XSAPPNAME.Viewer",
+   "description": "Viewer Role"
+  },
+  {
+   "name": "$XSAPPNAME.Admin",
+   "description": "Admin Role"
+  }
+ ],
+ "attributes": [
+  {
+   "name": "myCountry",
+   "description": "Country",
+   "valueType": "string"
+  }
+ ],
+ "role-templates": [
+  {
+   "name": "Viewer",
+   "description": "Viewer Role",
+   "scope-references": [
+    "$XSAPPNAME.Viewer"
+   ],
+   "attribute-references": [
+    "myCountry"
+   ]
+  },
+  {
+   "name": "Admin",
+   "description": "Admin Role",
+   "scope-references": [
+    "$XSAPPNAME.Admin"
+   ],
+   "attribute-references": [
     {
-      "name": "$XSAPPNAME.Viewer",
-      "description": "Viewer Role"
-    },
-    {
-      "name": "$XSAPPNAME.Admin",
-      "description": "Admin Role"
+     "name": "myCountry"
     }
-  ],
-  "attributes": [
-    {
-      "name": "myCountry",
-      "description": "Country",
-      "valueType": "string"
-    }
-  ],
-  "role-templates": [
-    {
-      "name": "Viewer",
-      "description": "Viewer Role",
-      "scope-references": [
-        "$XSAPPNAME.Viewer"
-      ],
-      "attribute-references": [
-        "myCountry"
-      ]
-    },
-    {
-      "name": "Admin",
-      "description": "Admin Role",
-      "scope-references": [
-        "$XSAPPNAME.Admin"
-      ],
-      "attribute-references": [
-        {
-         "name" : "myCountry"
-        }
-        
-      ]
-    }
-  ]
+   ]
+  }
+ ]
 }

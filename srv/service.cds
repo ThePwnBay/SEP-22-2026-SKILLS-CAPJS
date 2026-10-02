@@ -22,7 +22,7 @@ type createEmployeeInput : array of {
 }
 
 
-service CatalogService {
+service CatalogService @(require: 'authenticated-user') { 
 
   //  @insertonly
     entity ProductSrv as projection on db.master.Products;

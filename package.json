@@ -25,9 +25,14 @@
     "app/poapp"
   ],
   "cds": {
+    "server" : {
+      "index" : true
+    },
     "requires": {
       "[production]": {
-        "auth": "xsuaa"
+        "auth":  { 
+             "kind" : "xsuaa"
+        }
       }
     }
   }
